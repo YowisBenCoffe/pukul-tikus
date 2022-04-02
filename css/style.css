@@ -6,22 +6,30 @@ h3 {
   margin: 10px;
 }
 h2 {
-  font-size: 30px;
+  font-size: 31px;
   text-align: center;
   font-family: arial;
+  margin: 10px;
 }
+h2 a {
+  text-decoration: none;
+}
+
 button {
   display: block;
   margin: auto;
 }
+
 .container {
   width: 600px;
   margin: auto;
-  cursor: crosshair;
+  cursor: url(../img/palu1.png), auto;
 }
+
 .container:active {
-  cursor: crosshair;
+  cursor: url(../img/palu2.png), auto;
 }
+
 .tanah {
   width: 200px;
   height: 200px;
@@ -29,16 +37,18 @@ button {
   overflow: hidden;
   float: left;
 }
+
 .tanah::after {
   content: "";
   display: block;
   width: 200px;
   height: 100px;
-  background: url(../img/dirt-576619_1280.png) bottom center no-repeat;
+  background: url(../img/tanah.png) bottom center no-repeat;
   background-size: 80%;
   position: absolute;
   bottom: -25px;
 }
+
 .tikus {
   width: 100%;
   height: 100%;
@@ -48,6 +58,10 @@ button {
   top: 100px;
   transition: top 0.3s;
 }
+
 .tanah.muncul .tikus {
   top: -15px;
+}
+.mulai {
+  border-radius: 5px;
 }
